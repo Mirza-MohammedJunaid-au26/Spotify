@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&display=swap');
+/* 
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'Pacifico', cursive;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    background: rgba(37, 182, 201, 0.822);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+/* Main */
+
+.spidy-img{
+    position: absolute;
+    left:50vw;
+    /* top: vh; */
+    height:800px;
+    width:500px;
+    display: none;
+}
+
+.container{
+    min-height: 75vh;
+    color: #21325E;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    background-color: rgb(128, 223, 252);
+    border-radius: 12px;
+    padding: 34px;
+}
+
+.songList > h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color: black;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 16px;
+}
+
+.icons > i {
+    cursor: pointer;
+}
+
+.fa-step-backward{
+    margin-right: 18px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 40px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    /* width: 85%; */
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    font-size: 1.2rem;
+}
+
+.songItem > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 34px;
+    margin: 0 10px 0 7px;
+}
+
+.time-stamp{
+    margin: 0 23px;
+}
+
+.fa-circle-play:before, .fa-play-circle:before,.fa-pause-circle{
+    content: "\f144";
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.songInfo{
+  position: absolute;
+  left: 10vw;
+}
+
+.songInfo > img{
+  opacity: 0;
+  transition:  opacity 0.5s ease-in-out;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .spidy-img{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .container{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+    .songList > h1 {
+       font-size: 1.5rem;
+       text-align: center;
+    }
+
+    .songName{
+        text-align: center;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .bottom{
+        height: 178px;
+    }
+
+    .songInfo{
+        display: flex;
+        top: 22vh;
+      }
+
+      #gif{
+          margin-right: 10px;
+      }
+
+      #masterSongName{
+          font-size: 1.5rem;
+      }
+
+}
